@@ -37,10 +37,10 @@ body {
 }
 
 a {
-  color: var(--orange);
+  color: hsl(var(--orange));
 }
 a:hover {
-  color: var(--orange);
+  color: hsl(var(--orange));
   text-decoration: none;
 }
 img {
