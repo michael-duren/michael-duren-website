@@ -1,19 +1,22 @@
 :root {
   --base-size: 1rem;
-  --scale: 1.25;
+  --scale: 1.414;
   --h1: calc(var(--h2) * var(--scale));
   --h2: calc(var(--h3) * var(--scale));
   --h3: calc(var(--h4) * var(--scale));
   --h4: calc(var(--h5) * var(--scale));
   --h5: calc(var(--h6) * var(--scale));
   --h6: var(--base-size);
-  --accent: 124, 58, 237;
-  --accent-gradient: linear-gradient(
-    45deg,
-    rgb(var(--accent)),
-    #4497b7aa 30%,
-    #5ccffedd 60%
-  );
+
+  /* colors */
+  --blue-gray: 207 15% 61%;
+  --light-gray: 192 17% 94%;
+  --gray: 192 17% 84%;
+  --light-blue: 197 99% 68%;
+  --dark-blue: 197 46% 49%;
+  --orange: 17 99% 68%;
+  --cyan: 180 100% 50%;
+  --purple: 255 94% 79%;
 }
 html {
   box-sizing: border-box;
@@ -25,28 +28,11 @@ html {
   box-sizing: inherit;
 }
 
-h1 {
-  font-size: var(--h1);
-}
-
-h2 {
-  font-size: var(--h2);
-}
-
-h3 {
-  font-size: var(--h3);
-}
-
-h4 {
-  font-size: var(--h4);
-}
-
-h5 {
-  font-size: var(--h5);
-}
-
-h6 {
-  font-size: var(--h6);
+body {
+  margin: 0;
+  padding: 0;
+  font-size: var(--base-size);
+  line-height: 1.5;
 }
 
 a {
@@ -63,4 +49,44 @@ img {
 figure {
   margin: 0;
   padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+  line-height: 1.3;
+}
+
+h1,
+.h1 {
+  font-size: var(--h1);
+}
+
+h2,
+.h2 {
+  font-size: var(--h2);
+}
+
+h3,
+.h3 {
+  font-size: var(--h3);
+}
+
+h4,
+.h4 {
+  font-size: var(--h4);
+}
+
+h5,
+.h5 {
+  font-size: var(--h5);
+}
+
+h6,
+.h6 {
+  font-size: var(--h6);
 }

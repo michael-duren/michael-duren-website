@@ -4,22 +4,54 @@ import FloatingAvatar from '../components/FloadingAvatar.astro';
 ---
 
 <Layout title="Michael Duren">
-  <main>
-    <h1>Michael<span class="text-gradient"> Duren</span></h1>
-    <div class="floating-avatar">
-      <FloatingAvatar />
+  <div class="wrapper">
+    <div class="content">
+      <header>
+        <h1>Michael Duren</h1>
+        <h2 class="h3">Software Engineer</h2>
+      </header>
+      <main>
+        <p class="hello"
+          >Hi, I'm Michael a software engineer and musician from Minnesota.</p
+        >
+      </main>
     </div>
-  </main>
+    <aside>
+      <div class="floating-avatar">
+        <FloatingAvatar />
+      </div>
+    </aside>
+  </div>
 
   <style>
+    .wrapper {
+      height: 100vh;
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      justify-content: center;
+      border: 1px solid red;
+    }
+
+    .content {
+      margin-left: 10%;
+      width: 50vw;
+    }
+    .hello {
+      font-size: 2rem;
+      margin: 0;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
     main {
       margin: auto;
-      padding: 1.5rem;
-      height: 100vh;
-      position: relative;
+    }
+    header {
+      display: flex;
+      flex-direction: column;
+      color: hsl(var(--light-gray));
     }
     h1 {
-      font-size: 5rem;
       font-weight: 900;
       margin: 0;
     }
