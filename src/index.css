@@ -17,6 +17,7 @@
   --orange: 17 99% 68%;
   --cyan: 180 100% 50%;
   --purple: 255 94% 79%;
+  --transparent: 0 0% 0% / 0.1;
 }
 html {
   box-sizing: border-box;

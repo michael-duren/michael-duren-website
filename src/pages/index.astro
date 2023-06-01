@@ -10,11 +10,7 @@ import FloatingAvatar from '../components/FloadingAvatar.astro';
         <h1>Michael Duren</h1>
         <h2 class="h3">Software Engineer</h2>
       </header>
-      <main>
-        <p class="hello"
-          >Hi, I'm Michael a software engineer and musician from Minnesota.</p
-        >
-      </main>
+      <main> </main>
     </div>
     <aside>
       <div class="floating-avatar">
@@ -30,12 +26,13 @@ import FloatingAvatar from '../components/FloadingAvatar.astro';
       position: relative;
       flex-direction: column;
       justify-content: center;
-      border: 1px solid red;
     }
 
     .content {
       margin-left: 10%;
       width: 50vw;
+      display: flex;
+      flex-direction: column;
     }
     .hello {
       font-size: 2rem;
@@ -46,9 +43,16 @@ import FloatingAvatar from '../components/FloadingAvatar.astro';
     main {
       margin: auto;
     }
+
     header {
+      box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+        0 4px 6px -4px rgb(0 0 0 / 0.1);
+      background-color: hsl(var(--transparent));
       display: flex;
       flex-direction: column;
+      width: max-content;
+      padding: 1.5rem;
+      border-radius: 0.5rem;
       color: hsl(var(--light-gray));
     }
     h1 {
@@ -58,7 +62,7 @@ import FloatingAvatar from '../components/FloadingAvatar.astro';
 
     .floating-avatar {
       position: absolute;
-      top: 50%;
+      top: 55%;
       right: 15%;
       transform: translateY(-50%);
     }
